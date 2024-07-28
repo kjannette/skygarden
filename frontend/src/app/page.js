@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState, useCallback } from "react";
+import { useEffect, useState } from "react";
 import Image from "next/image";
 import styles from "./page.module.css";
 const names = ["tony", "elias", "fadi"];
@@ -26,12 +26,16 @@ export default function Home() {
       if (index === text.length) {
         clearInterval(timer);
       }
-    }, 100); // adjust timing here
+    }, 10); // adjust timing here
 
     return () => clearInterval(timer); // cleanup on unmount
   }, [text]);
 
-  return <div>{typewriterText}</div>;
+  return (
+    <div className={styles.main}>
+      <div>{typewriterText}</div>
+    </div>
+  );
 }
 
 /*
