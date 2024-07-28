@@ -8,7 +8,8 @@ const names = ["tony", "elias", "fadi"];
 export default function Home() {
   const [text, setText] = useState("");
   const [typewriterText, setTypewriterText] = useState("");
-  const apiText = "rtes ipd fg as  fdf df  df d f df awdjn dfks";
+  const apiText =
+    "tet consul imperdiet te vix. Per in integre meliore vituperata, ea veniam saperet vis, no pro probo regione lobortis. Ei vim putent dolorem elaboraret, ei perfecto consectetuer duo. Duo an aliquam similique signiferumque. In duo brute etiam, an mea paulo efficiendi, mea alii ludus te. Ea prima quando mel, lorem aeque alterum vel ut, et est unum necessitatibus. Mea ad causae voluptua atomorum, mel modo putant dissentias at.";
   // Simulating fetching text from an API
   useEffect(() => {
     //fetchYourTextFromAPI().then((fetchedText) => setText(fetchedText));
